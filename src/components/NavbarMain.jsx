@@ -15,7 +15,7 @@ const NavBarMain = ()=>{
                 <p className=' sm:hidden'><MenuIcon className='cursor-pointer ' fontSize='medium'  /></p>
                 <h1 className="text-center hidden sm:flex cursor-pointer text-white bg-blue-500 text-4xl font-bold p-2 rounded-md"><NavLink to={"/"}>W</NavLink></h1>
                 <nav className='hidden sm:flex  font-lg'>
-                    <p className='py-2 cursor-pointer px-1 hover:bg-blue-200 rounded-md '><NavLink style={({isActive})=>({backgroundColor: isActive?"indigo":"",color:isActive?"white":"",padding:isActive?"14px":"",borderRadius:isActive?"3px  10px":""})} to={"/"}>Home</NavLink></p>
+                <p className='py-2 cursor-pointer px-1 hover:bg-blue-200 rounded-md '><NavLink style={({isActive})=>({backgroundColor: isActive?"indigo":"",color:isActive?"white":"",padding:isActive?"14px":"",borderRadius:isActive?"3px  10px":""})} to={"/"}>Home</NavLink></p>
                     <p className='py-2 cursor-pointer px-1 hover:bg-blue-200 rounded-md ' ><NavLink style={({isActive})=>({backgroundColor: isActive?"indigo":"",color:isActive?"white":"",padding:isActive?"14px":"",borderRadius:isActive?"3px 10px":""})}  to={"products"}>Product</NavLink></p>
                     <p className='py-2 cursor-pointer px-1 hover:bg-blue-200 rounded-md ' ><NavLink style={({isActive})=>({backgroundColor: isActive?"indigo":"",color:isActive?"white":"",padding:isActive?"14px":"",borderRadius:isActive?"3px 10px ":""})}  to={"about"}>About</NavLink></p>
                 </nav>
