@@ -1,13 +1,17 @@
 
+import FeaturedProd from "../components/FeaturedProd"
+import Hero from "../components/Hero"
+
 
 
 const HomePage = ()=>{
 
 
     return (
-    <div>
-        homepage is where we are
-    </div>
+    <main className="max-w-5xl mx-auto">
+        <Hero />
+        <FeaturedProd />
+    </main>
     )
 }
 

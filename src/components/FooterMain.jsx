@@ -3,9 +3,9 @@
 
 const FooterMain = ()=>{
     return (
-        <div>
-            footer main is here 
-        </div>
+        <footer className="bg-indigo-950 text-white text-center">
+            <p>Est 2020</p>
+        </footer>
     )
 }
 
