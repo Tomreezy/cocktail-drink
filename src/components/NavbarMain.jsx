@@ -16,8 +16,8 @@ const NavBarMain = ()=>{
                 <h1 className="text-center hidden sm:flex cursor-pointer text-white bg-blue-500 text-4xl font-bold p-2 rounded-md"><NavLink to={"/"}>W</NavLink></h1>
                 <nav className='hidden sm:flex  font-lg'>
                     <p className='py-2 cursor-pointer px-3 hover:bg-blue-200 rounded-md '><NavLink to={"/"}>Home</NavLink></p>
-                    <p className='py-2 cursor-pointer px-3 hover:bg-blue-200 rounded-md ' >Product</p>
-                    <p className='py-2 cursor-pointer px-3 hover:bg-blue-200 rounded-md ' >About</p>
+                    <p className='py-2 cursor-pointer px-3 hover:bg-blue-200 rounded-md ' ><NavLink to={"products"}>Product</NavLink></p>
+                    <p className='py-2 cursor-pointer px-3 hover:bg-blue-200 rounded-md ' ><NavLink to={"about"}>About</NavLink></p>
                 </nav>
 
                
