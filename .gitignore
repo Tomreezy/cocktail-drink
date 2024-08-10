@@ -1,0 +1,30 @@
+# Node modules directory
+node_modules/
+
+# Build output directory
+dist/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE or editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Other potentially sensitive files
+*.key
+*.pem
+*.crt
+*.csr

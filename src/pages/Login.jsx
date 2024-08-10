@@ -22,7 +22,9 @@ const Login = ()=>{
                     <input id="password" className="bg-blue-100 outline-none border border-blue-500 border-solid w-full rounded-sm px-3 py-1" />
                 </div>
 
-                <button className="w-full mt-8 bg-blue-500 mb-8 py-1 text-white rounded-sm">Submit</button>
+                <button type="submit" className="w-full mt-8 bg-blue-500  py-1 text-white rounded-sm">Submit</button>
+
+                <button className="w-full mt-4 bg-blue-500 mb-8 py-1 text-white rounded-sm">Forgot password</button>
 
                 <p className="text-center">Not a member yet? <span className="text-blue-500">Register</span></p>
                 </div>
