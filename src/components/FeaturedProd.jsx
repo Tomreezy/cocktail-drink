@@ -27,7 +27,7 @@ const FeaturedProd = () => {
   return (
     <section className='px-6 md:px-0'>
     <h2 className='text-3xl text-indigo-950'>Featured Products</h2>
-    <hr className='w-full bg-slate-200 h-1 rounded-md my-12' />
+    <hr className='w-full bg-grey-500 h-1 rounded-md my-12' />
 
     <article className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {categoryItem.length > 0 && categoryItem.map(item=>{
