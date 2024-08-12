@@ -2,7 +2,7 @@ import React from 'react'
 import { useGetAllDrinksQuery, useGetByAlcoholicQuery, useGetByCategoryQuery } from '../services'
 import ClipLoader from 'react-spinners/ClipLoader'
 
-const ProductsList = () => {
+const ProductsList = ({start,end}) => {
   const{data,error,isLoading}=useGetAllDrinksQuery()
 
   console.log(data)
@@ -18,10 +18,10 @@ const ProductsList = () => {
     return <div>No drinks found</div>;
   }
   return (
-    <section className='grid sm:grid-cols-2 gap-8 md:grid-cols-4'>
+    <section className='grid sm:grid-cols-2 gap-8 md:grid-cols-4 my-4'>
         {data.drinks.map(item=>{
-          return <article className='flex flex-col shadow-md rounded-md overflow-hidden' key={item.idDrink}> 
-          <div className='h-[60%]'>
+          return <article className='flex flex-col border border-indigo-950 rounded-md overflow-hidden' key={item.idDrink}> 
+          <div className='h-[60%] p-2'>
             <img className='size-full object-cover' src={item.strDrinkThumb} />
             </div>
             <div className='flex flex-col justify-center'>
@@ -29,7 +29,7 @@ const ProductsList = () => {
               <p className='text-center font-light'>{item.idDrink}</p>
             </div>
           </article>
-        })}
+        }).slice(start,end)}
     </section>
   )
 }
