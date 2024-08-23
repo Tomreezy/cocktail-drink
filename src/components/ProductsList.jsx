@@ -18,15 +18,15 @@ const ProductsList = () => {
     return <div>No drinks found</div>;
   }
   return (
-    <section className='grid sm:grid-cols-2 gap-8 md:grid-cols-4'>
+    <section className='grid sm:grid-cols-2 mx-10 sm:mx-2  gap-8 md:grid-cols-4'>
         {data.drinks.map(item=>{
-          return <article className='flex flex-col shadow-md rounded-md overflow-hidden' key={item.idDrink}> 
+          return <article className='flex flex-col border border-solid border-indigo-950 shadow-md rounded-sm overflow-hidden' key={item.idDrink}> 
           <div className='h-[60%]'>
-            <img className='size-full object-cover' src={item.strDrinkThumb} />
+            <img className='size-full object-cover ' src={item.strDrinkThumb} />
             </div>
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col h-full justify-center p-2'>
               <p className='text-center font-bold'>{item.strDrink}</p>
-              <p className='text-center font-light'>{item.idDrink}</p>
+              <p className='text-center font-light'>${item.idDrink}</p>
             </div>
           </article>
         })}
