@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
 
 
 
@@ -8,6 +9,7 @@ const EachFeaturedProducts=({item})=>{
 
     return (
         <div className="cursor-pointer">
+          <NavLink to={`products/${item.idDrink}`}>
             <div className='shadow-md' onMouseLeave={()=> setHover(false)} onMouseMove={()=> setHover(true)} key={item.idDrink}>
             <div className='rounded-md relative border-4 border-solid border-indigo-950 overflow-hidden m-4 h-2/3'>
               <img src={item.strDrinkThumb || 'fallback-image-url'} alt={item.strDrink || 'Drink'} className={`w-full transition-all duration-300  h-full object-cover ${hover?"scale-125":""}`} />
@@ -26,6 +28,7 @@ const EachFeaturedProducts=({item})=>{
               
             </div>
           </div>
+          </NavLink>
         </div>
     )
 }
